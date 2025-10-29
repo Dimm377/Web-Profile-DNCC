@@ -1,0 +1,942 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Profile | Dimas Putra Wijaya</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Saira+Condensed:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link href="./style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-slate-900 text-gray-100 font-sans overflow-x-hidden">
+  <!-- Motion Background Container -->
+  <div class="motion-background" id="motionBackground"></div>
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-slate-800/35 backdrop-blur-sm py-4 px-6">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <img src="./assets/kali-removebg-preview.png" alt="logo" class="w-13 h-10 rounded-full object-cover">
+      </div>
+      <div class="hidden md:flex space-x-8">
+        <a href="#home"
+          class="navbar-link active text-gray-300 hover:text-teal-400 transition relative font-saira flex items-center">
+          <i class="fas fa-home mr-2 text-sm"></i>Home
+        </a>
+        <a href="#about"
+          class="navbar-link text-gray-300 hover:text-teal-400 transition relative font-saira flex items-center">
+          <i class="fas fa-user mr-2 text-sm"></i>About Me
+        </a>
+        <a href="#skills"
+          class="navbar-link text-gray-300 hover:text-teal-400 transition relative font-saira flex items-center">
+          <i class="fas fa-code mr-2 text-sm"></i>Skills
+        </a>
+        <a href="#projects"
+          class="navbar-link text-gray-300 hover:text-teal-400 transition relative font-saira flex items-center">
+          <i class="fas fa-folder mr-2 text-sm"></i>Projects
+        </a>
+        <a href="#contact"
+          class="navbar-link text-gray-300 hover:text-teal-400 transition relative font-saira flex items-center">
+          <i class="fas fa-envelope mr-2 text-sm"></i>Contact
+        </a>
+      </div>
+
+      <!-- Mobile menu button -->
+      <button id="mobile-menu-button" class="md:hidden text-gray-300 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" id="menu-icon"
+            d="M4 6h16M4 12h16M4 18h16"></path>
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" id="close-icon" d="M6 18L18 6M6 6l12 12"
+            class="hidden"></path>
+        </svg>
+      </button>
+    </div>
+
+
+    <div id="mobile-menu"
+      class="hidden md:hidden bg-slate-900/90 backdrop-blur-sm mt-4 py-4 rounded-lg absolute left-6 right-6">
+      <div class="flex flex-col space-y-4 px-6">
+        <a href="#home" class="text-gray-300 hover:text-teal-400 transition py-2 font-saira flex items-center">
+          <i class="fas fa-home mr-3"></i>Home
+        </a>
+        <a href="#about" class="text-gray-300 hover:text-teal-400 transition py-2 font-saira flex items-center">
+          <i class="fas fa-user mr-3"></i>About Me
+        </a>
+        <a href="#skills" class="text-gray-300 hover:text-teal-400 transition py-2 font-saira flex items-center">
+          <i class="fas fa-code mr-3"></i>Skills
+        </a>
+        <a href="#projects" class="text-gray-300 hover:text-teal-400 transition py-2 font-saira flex items-center">
+          <i class="fas fa-folder mr-3"></i>Projects
+        </a>
+        <a href="#contact" class="text-gray-300 hover:text-teal-400 transition py-2 font-saira flex items-center">
+          <i class="fas fa-envelope mr-3"></i>Contact
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="min-h-screen flex items-center relative z-10 pt-36">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center">
+
+        <div class="text-content flex-1 w-full lg:w-auto" data-aos="fade-right" data-aos-delay="100">
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-space-grotesk text-teal-400 mb-3 sm:mb-4">
+            Hello, I'm
+            <span class="block font-extrabold text-slate-200 text-3xl sm:text-4xl md:text-5xl mt-2 mb-2 sm:mb-3">
+              Dimas Putra Wijaya
+            </span>
+          </h1>
+          <h2
+            class="font-semibold text-slate-200 uppercase text-base sm:text-lg md:text-xl mb-3 font-space-grotesk tracking-wide">
+            Web Development | Cyber Security
+          </h2>
+          <p class="text-slate-100 text-sm sm:text-base md:text-lg mb-6 sm:mb-8 leading-relaxed font-inter">
+            a passionate college student on the road to becoming a
+            <strong class="text-teal-400 font-semibold">Full-Stack Web Engineer</strong> and
+            <strong class="text-teal-400 font-semibold">Cyber Security Expert</strong>
+          </p>
+          <div class="mt-4">
+            <a href="#about"
+              class="github-button text-xs sm:text-sm font-semibold font-space-grotesk bg-teal-500 py-2 px-4 rounded-full text-slate-900 relative overflow-hidden z-10 inline-flex items-center shadow-lg hover:shadow-teal-500/30 transition-all duration-300 ease-in-out hover:-translate-y-0.5 transform">
+              <i class="fas fa-user mr-2 text-sm transition-transform duration-300 ease-in-out"></i>
+              About Me
+            </a>
+          </div>
+        </div>
+
+        <!-- Profile image -->
+        <div class="image-content flex-1 w-full lg:w-auto flex justify-center" data-aos="fade-left"
+          data-aos-delay="200">
+          <div
+            class="w-full max-w-[200px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-md aspect-square overflow-hidden rounded-full border-4 border-teal-500/30 shadow-xl hero-image"
+            data-aos="zoom-in" data-aos-delay="300">
+            <img src="./assets/violet_evergarden-removebg-preview.png" alt="Profile Image of Dimas Putra Wijaya"
+              class="w-full h-full object-contain">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 sm:py-20 bg-slate-800/50 backdrop-blur-sm mt-10">
+    <div class="container mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2
+          class="font-bold text-2xl sm:text-3xl md:text-4xl text-teal-400 uppercase mb-4 text-center font-space-grotesk tracking-wide"
+          data-aos="fade-down" data-aos-duration="600" data-aos-delay="100">
+          About Me
+        </h2>
+        <div class="w-24 h-1 bg-teal-500 mx-auto rounded-full" data-aos="fade-up" data-aos-duration="600"
+          data-aos-delay="100" data-aos-easing="ease-out-cubic"></div>
+      </div>
+
+      <div class="max-w-4xl mx-auto">
+        <div
+          class="about-card bg-slate-900/80 backdrop-blur-sm rounded-2xl overflow-hidden border border-slate-700/50 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
+          data-aos="fade-up" data-aos-duration="700" data-aos-delay="150">
+          <div class="about-card-content rounded-2xl p-6 md:p-8">
+            <div class="flex flex-col md:flex-row gap-8">
+
+              <div class="md:w-1/3 flex justify-center items-center" data-aos="fade-right" data-aos-duration="700"
+                data-aos-delay="200">
+                <div class="profile-image-container relative">
+                  <div class="w-48 h-48 rounded-full overflow-hidden border-4 border-teal-500/30 shadow-lg">
+                    <img src="./assets/_violet_1_-removebg-preview.png" alt="Profile"
+                      class="w-full h-full object-contain">
+                  </div>
+                  <div
+                    class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-teal-500 text-slate-900 px-4 py-1 rounded-full text-sm font-semibold font-space-grotesk shadow-lg">
+                    Student
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="md:w-2/3 flex flex-col justify-center" data-aos="fade-left" data-aos-duration="700"
+                data-aos-delay="250">
+                <h3 class="text-2xl md:text-3xl font-bold text-slate-100 mb-3 font-space-grotesk">
+                  Dimas Putra Wijaya
+                </h3>
+
+                <!-- Value Proposition Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                  <div
+                    class="value-card bg-slate-800/50 rounded-lg p-3 border border-slate-700/30 hover:border-teal-500/50 transition-all duration-300 cursor-pointer"
+                    data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
+                    <h4 class="text-teal-400 font-semibold text-sm mb-1 flex items-center">
+                      <i class="fa-solid fa-star text-xs mr-2"></i> Unique Skill
+                    </h4>
+                    <p class="text-slate-400 text-xs">Full-stack development with cyber-security focus</p>
+                  </div>
+                  <div
+                    class="value-card bg-slate-800/50 rounded-lg p-3 border border-slate-700/30 hover:border-purple-500/50 transition-all duration-300 cursor-pointer"
+                    data-aos="fade-up" data-aos-duration="600" data-aos-delay="350">
+                    <h4 class="text-purple-400 font-semibold text-sm mb-1 flex items-center">
+                      <i class="fas fa-lightbulb text-xs mr-2"></i> Philosophy
+                    </h4>
+                    <p class="text-slate-400 text-xs">KISS principle + OWASP Top 10 security</p>
+                  </div>
+                </div>
+
+                <div class="text-gray-300 text-base leading-relaxed font-inter mb-5">
+                  <p class="mb-3 transition-all duration-300 hover:text-slate-200" data-aos="fade-up"
+                    data-aos-duration="600" data-aos-delay="400">
+                    I'm a passionate college student on the road to becoming a
+                    <strong class="text-teal-400 font-semibold hover:text-cyan-400 transition-colors">Full-Stack Web
+                      Engineer</strong> and
+                    <strong class="text-teal-400 font-semibold hover:text-cyan-400 transition-colors">Cyber Security
+                      Expert</strong>.
+                    With a strong foundation in both frontend and backend technologies,
+                    I create robust and secure web applications.
+                  </p>
+                  <p class="mb-3 transition-all duration-300 hover:text-slate-200" data-aos="fade-up"
+                    data-aos-duration="700" data-aos-delay="450" data-aos-easing="ease-out-cubic">
+                    I follow the
+                    <strong class="text-teal-400 font-semibold hover:text-cyan-400 transition-colors">KISS
+                      principle</strong> (Keep It Simple, Stupid)
+                    and am mindful of
+                    <strong class="text-teal-400 font-semibold hover:text-cyan-400 transition-colors">OWASP Top
+                      10</strong>
+                    vulnerabilities to ensure the security of my applications.
+                  </p>
+                  <p class="transition-all duration-300 hover:text-slate-200" data-aos="fade-up" data-aos-duration="600"
+                    data-aos-delay="500">
+                    My journey in tech is driven by curiosity and the desire to solve real-world problems through
+                    secure,
+                    elegant code and innovative solutions.
+                  </p>
+                </div>
+
+                <!-- What I Bring -->
+                <div class="mb-6" data-aos="fade-up" data-aos-duration="600" data-aos-delay="550">
+                  <h4 class="text-teal-400 font-semibold mb-2 font-space-grotesk">What I Bring to You:</h4>
+                  <ul class="space-y-2 text-slate-300 text-sm">
+                    <li class="flex items-start hover:text-teal-400 transition-colors duration-300" data-aos="fade-up"
+                      data-aos-duration="600" data-aos-delay="600">
+                      <i class="fas fa-check-circle text-teal-500 mt-0.5 mr-2 text-xs"></i>
+                      <span>Secure, efficient, and maintainable code</span>
+                    </li>
+                    <li class="flex items-start hover:text-teal-400 transition-colors duration-300" data-aos="fade-up"
+                      data-aos-duration="600" data-aos-delay="650">
+                      <i class="fas fa-check-circle text-teal-500 mt-0.5 mr-2 text-xs"></i>
+                      <span>Full-stack development with security-first approach</span>
+                    </li>
+                    <li class="flex items-start hover:text-teal-400 transition-colors duration-300" data-aos="fade-up"
+                      data-aos-duration="600" data-aos-delay="700">
+                      <i class="fas fa-check-circle text-teal-500 mt-0.5 mr-2 text-xs"></i>
+                      <span>Continuous learning and adaptation to new technologies</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="flex flex-wrap gap-3" data-aos="fade-up" data-aos-duration="600" data-aos-delay="750">
+                  <a href="#skills"
+                    class="github-button text-sm font-semibold font-space-grotesk bg-teal-500 py-2 px-5 rounded-full text-slate-900 shadow-lg hover:shadow-teal-500/30 transition-all duration-300 ease-in-out hover:-translate-y-0.5 transform flex items-center">
+                    <i class="fas fa-code mr-2"></i> View My Skills
+                  </a>
+
+                  <a href="https://github.com/Dimm377"
+                    class="github-button text-sm font-semibold font-space-grotesk bg-slate-700 py-2 px-5 rounded-full text-slate-200 shadow-lg hover:shadow-slate-700/30 transition-all duration-300 ease-in-out hover:-translate-y-0.5 transform flex items-center">
+                    <i class="fab fa-github mr-2"></i> View My GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+  <!-- Skills Section with Floating 3D Cards -->
+  <section id="skills" class="py-20 bg-slate-900/50 backdrop-blur-sm">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4 text-slate-200 font-space-grotesk" data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">
+          <span class="bg-linear-to-r from-teal-400 to-cyan-400 bg-clip-text text-transparent">My Tech Stack</span>
+        </h2>
+        <div class="w-24 h-1 bg-teal-500 mx-auto rounded-full mb-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="150" data-aos-easing="ease-out-cubic"></div>
+        <p class="text-lg text-slate-400 max-w-2xl mx-auto font-inter" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+          Technologies I currently learn and use for development and projects
+        </p>
+      </div>
+
+      <!-- Compact Skills Cards Container with Smooth Staggered Animation -->
+      <div class="flex flex-wrap justify-center gap-4 md:gap-6">
+        <!-- HTML5 Card -->
+        <div class="skill-card group relative" data-aos="fade-up" data-aos-duration="600" data-aos-delay="50"
+          data-aos-easing="ease-out-cubic">
+          <div
+            class="w-24 h-32 md:w-28 md:h-36 bg-slate-800/60 backdrop-blur-md rounded-xl p-3 border border-slate-700/50 shadow-lg hover:shadow-xl hover:shadow-teal-500/20 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 flex flex-col items-center justify-center text-center relative overflow-hidden">
+            <div class="shimmer-overlay absolute inset-0 rounded-xl pointer-events-none"></div>
+            <div
+              class="w-12 h-12 md:w-14 md:h-14 rounded-lg overflow-hidden mb-2 flex items-center justify-center relative z-10">
+              <img src="./assets/html-removebg-preview.png" alt="HTML5" class="w-full h-full object-contain p-1">
+            </div>
+            <h3 class="text-xs md:text-sm font-semibold text-slate-200 relative z-10">Html</h3>
+          </div>
+        </div>
+
+        <!-- Tailwind CSS Card -->
+        <div class="skill-card group relative" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100"
+          data-aos-easing="ease-out-cubic">
+          <div
+            class="w-24 h-32 md:w-28 md:h-36 bg-slate-800/60 backdrop-blur-md rounded-xl p-3 border border-slate-700/50 shadow-lg hover:shadow-xl hover:shadow-teal-500/20 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 flex flex-col items-center justify-center text-center relative overflow-hidden">
+            <div class="shimmer-overlay absolute inset-0 rounded-xl pointer-events-none"></div>
+            <div
+              class="w-12 h-12 md:w-14 md:h-14 rounded-lg overflow-hidden mb-2 flex items-center justify-center relative z-10">
+              <img src="./assets/tailwindcss-mark.d52e9897.svg" alt="Tailwind CSS"
+                class="w-full h-full object-contain p-1">
+            </div>
+            <h3 class="text-xs md:text-sm font-semibold text-slate-200 relative z-10">Tailwind</h3>
+          </div>
+        </div>
+
+        <!-- JavaScript Card -->
+        <div class="skill-card group relative" data-aos="fade-up" data-aos-duration="600" data-aos-delay="150"
+          data-aos-easing="ease-out-cubic">
+          <div
+            class="w-24 h-32 md:w-28 md:h-36 bg-slate-800/60 backdrop-blur-md rounded-xl p-3 border border-slate-700/50 shadow-lg hover:shadow-xl hover:shadow-teal-500/20 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 flex flex-col items-center justify-center text-center relative overflow-hidden">
+            <div class="shimmer-overlay absolute inset-0 rounded-xl pointer-events-none"></div>
+            <div
+              class="w-12 h-12 md:w-14 md:h-14 rounded-lg overflow-hidden mb-2 flex items-center justify-center relative z-10">
+              <img src="./assets/JavaScript-logo.png" alt="JavaScript" class="w-full h-full object-contain p-1">
+            </div>
+            <h3 class="text-xs md:text-sm font-semibold text-slate-200 relative z-10">JavaScript</h3>
+          </div>
+        </div>
+
+        <!-- TypeScript Card -->
+        <div class="skill-card group relative" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200"
+          data-aos-easing="ease-out-cubic">
+          <div
+            class="w-24 h-32 md:w-28 md:h-36 bg-slate-800/60 backdrop-blur-md rounded-xl p-3 border border-slate-700/50 shadow-lg hover:shadow-xl hover:shadow-teal-500/20 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 flex flex-col items-center justify-center text-center relative overflow-hidden">
+            <div class="shimmer-overlay absolute inset-0 rounded-xl pointer-events-none"></div>
+            <div
+              class="w-12 h-12 md:w-14 md:h-14 rounded-lg overflow-hidden mb-2 flex items-center justify-center relative z-10">
+              <img src="./assets/typescript.png" alt="TypeScript" class="w-full h-full object-contain p-1">
+            </div>
+            <h3 class="text-xs md:text-sm font-semibold text-slate-200 relative z-10">TypeScript</h3>
+          </div>
+        </div>
+
+        <!-- Golang Card -->
+        <div class="skill-card group relative" data-aos="fade-up" data-aos-duration="600" data-aos-delay="225"
+          data-aos-easing="ease-out-cubic">
+          <div
+            class="w-24 h-32 md:w-28 md:h-36 bg-slate-800/60 backdrop-blur-md rounded-xl p-3 border border-slate-700/50 shadow-lg hover:shadow-xl hover:shadow-teal-500/20 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 flex flex-col items-center justify-center text-center relative overflow-hidden">
+            <div class="shimmer-overlay absolute inset-0 rounded-xl pointer-events-none"></div>
+            <div
+              class="w-12 h-12 md:w-14 md:h-14 rounded-lg overflow-hidden mb-2 flex items-center justify-center relative z-10">
+              <img src="./assets/goll.png" alt="Golang" class="w-full h-full object-contain p-1">
+            </div>
+            <h3 class="text-xs md:text-sm font-semibold text-slate-200 relative z-10">Golang</h3>
+          </div>
+        </div>
+
+        <!-- Express.js Card -->
+        <div class="skill-card group relative" data-aos="fade-up" data-aos-duration="600" data-aos-delay="250"
+          data-aos-easing="ease-out-cubic">
+          <div
+            class="w-24 h-32 md:w-28 md:h-36 bg-slate-800/60 backdrop-blur-md rounded-xl p-3 border border-slate-700/50 shadow-lg hover:shadow-xl hover:shadow-teal-500/20 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 flex flex-col items-center justify-center text-center relative overflow-hidden">
+            <div class="shimmer-overlay absolute inset-0 rounded-xl pointer-events-none"></div>
+            <div
+              class="w-12 h-12 md:w-14 md:h-14 rounded-lg overflow-hidden mb-2 flex items-center justify-center relative z-10">
+              <img src="./assets/ejs.png" alt="Express.js" class="w-full h-full object-contain p-1">
+            </div>
+            <h3 class="text-xs md:text-sm font-semibold text-slate-200 relative z-10">Express.js</h3>
+          </div>
+        </div>
+
+        <!-- Python Card -->
+        <div class="skill-card group relative" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300"
+          data-aos-easing="ease-out-cubic">
+          <div
+            class="w-24 h-32 md:w-28 md:h-36 bg-slate-800/60 backdrop-blur-md rounded-xl p-3 border border-slate-700/50 shadow-lg hover:shadow-xl hover:shadow-teal-500/20 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 flex flex-col items-center justify-center text-center relative overflow-hidden">
+            <div class="shimmer-overlay absolute inset-0 rounded-xl pointer-events-none"></div>
+            <div
+              class="w-12 h-12 md:w-14 md:h-14 rounded-lg overflow-hidden mb-2 flex items-center justify-center relative z-10">
+              <img src="./assets/python-logo-only.png" alt="Python" class="w-full h-full object-contain p-1">
+            </div>
+            <h3 class="text-xs md:text-sm font-semibold text-slate-200 relative z-10">Python</h3>
+          </div>
+        </div>
+
+        <!-- Arch Linux Card -->
+        <div class="skill-card group relative" data-aos="fade-up" data-aos-duration="600" data-aos-delay="350"
+          data-aos-easing="ease-out-cubic">
+          <div
+            class="w-24 h-32 md:w-28 md:h-36 bg-slate-800/60 backdrop-blur-md rounded-xl p-3 border border-slate-700/50 shadow-lg hover:shadow-xl hover:shadow-teal-500/20 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 flex flex-col items-center justify-center text-center relative overflow-hidden">
+            <div class="shimmer-overlay absolute inset-0 rounded-xl pointer-events-none"></div>
+            <div
+              class="w-12 h-12 md:w-14 md:h-14 rounded-lg overflow-hidden mb-2 flex items-center justify-center relative z-10">
+              <img src="./assets/Arch_Linux__Crystal__icon.svg.png" alt="Arch Linux"
+                class="w-full h-full object-contain p-1">
+            </div>
+            <h3 class="text-xs md:text-sm font-semibold text-slate-200 relative z-10">Arch Linux</h3>
+          </div>
+        </div>
+
+        <!-- Neovim Card -->
+        <div class="skill-card group relative" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400"
+          data-aos-easing="ease-out-cubic">
+          <div
+            class="w-24 h-32 md:w-28 md:h-36 bg-slate-800/60 backdrop-blur-md rounded-xl p-3 border border-slate-700/50 shadow-lg hover:shadow-xl hover:shadow-teal-500/20 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 flex flex-col items-center justify-center text-center relative overflow-hidden">
+            <div class="shimmer-overlay absolute inset-0 rounded-xl pointer-events-none"></div>
+            <div
+              class="w-12 h-12 md:w-14 md:h-14 rounded-lg overflow-hidden mb-2 flex items-center justify-center relative z-10">
+              <img src="./assets/Neovim-mark.png" alt="Neovim" class="w-full h-full object-contain p-1">
+            </div>
+            <h3 class="text-xs md:text-sm font-semibold text-slate-200 relative z-10">Neovim</h3>
+          </div>
+        </div>
+
+        <!-- Node.js Card -->
+        <div class="skill-card group relative" data-aos="fade-up" data-aos-duration="600" data-aos-delay="450"
+          data-aos-easing="ease-out-cubic">
+          <div
+            class="w-24 h-32 md:w-28 md:h-36 bg-slate-800/60 backdrop-blur-md rounded-xl p-3 border border-slate-700/50 shadow-lg hover:shadow-xl hover:shadow-teal-500/20 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 flex flex-col items-center justify-center text-center relative overflow-hidden">
+            <div class="shimmer-overlay absolute inset-0 rounded-xl pointer-events-none"></div>
+            <div
+              class="w-12 h-12 md:w-14 md:h-14 rounded-lg overflow-hidden mb-2 flex items-center justify-center relative z-10">
+              <img src="./assets/node.png" alt="Node.js" class="w-full h-full object-contain p-1">
+            </div>
+            <h3 class="text-xs md:text-sm font-semibold text-slate-200 relative z-10">Node.js</h3>
+          </div>
+        </div>
+
+        <!-- Kali Linux Card -->
+        <div class="skill-card group relative" data-aos="fade-up" data-aos-duration="600" data-aos-delay="500"
+          data-aos-easing="ease-out-cubic">
+          <div
+            class="w-24 h-32 md:w-28 md:h-36 bg-slate-800/60 backdrop-blur-md rounded-xl p-3 border border-slate-700/50 shadow-lg hover:shadow-xl hover:shadow-teal-500/20 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 flex flex-col items-center justify-center text-center relative overflow-hidden">
+            <div class="shimmer-overlay absolute inset-0 rounded-xl pointer-events-none"></div>
+            <div
+              class="w-12 h-12 md:w-14 md:h-14 rounded-lg overflow-hidden mb-2 flex items-center justify-center relative z-10">
+              <img src="./assets/Kali-dragon-icon.svg.png" alt="Kali Linux" class="w-full h-full object-contain">
+            </div>
+            <h3 class="text-xs md:text-sm font-semibold text-slate-200 relative z-10">Kali Linux</h3>
+          </div>
+        </div>
+
+        <!-- Burp Suite Card -->
+        <div class="skill-card group relative" data-aos="fade-up" data-aos-duration="600" data-aos-delay="550"
+          data-aos-easing="ease-out-cubic">
+          <div
+            class="w-24 h-32 md:w-28 md:h-36 bg-slate-800/60 backdrop-blur-md rounded-xl p-3 border border-slate-700/50 shadow-lg hover:shadow-xl hover:shadow-teal-500/20 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 flex flex-col items-center justify-center text-center relative overflow-hidden">
+            <div class="shimmer-overlay absolute inset-0 rounded-xl pointer-events-none"></div>
+            <div
+              class="w-12 h-12 md:w-14 md:h-14 rounded-lg overflow-hidden mb-2 flex items-center justify-center relative z-10">
+              <img src="./assets/burp.jpg" alt="Burp Suite" class="w-full h-full object-contain p-1">
+            </div>
+            <h3 class="text-xs md:text-sm font-semibold text-slate-200 relative z-10">Burp Suite</h3>
+          </div>
+        </div>
+
+        <!-- Wireshark Card -->
+        <div class="skill-card group relative" data-aos="fade-up" data-aos-duration="600" data-aos-delay="600"
+          data-aos-easing="ease-out-cubic">
+          <div
+            class="w-24 h-32 md:w-28 md:h-36 bg-slate-800/60 backdrop-blur-md rounded-xl p-3 border border-slate-700/50 shadow-lg hover:shadow-xl hover:shadow-teal-500/20 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 flex flex-col items-center justify-center text-center relative overflow-hidden">
+            <div class="shimmer-overlay absolute inset-0 rounded-xl pointer-events-none"></div>
+            <div
+              class="w-12 h-12 md:w-14 md:h-14 rounded-lg overflow-hidden mb-2 flex items-center justify-center relative z-10">
+              <img src="./assets/Wireshark_icon_new-removebg-preview.png" alt="Wireshark"
+                class="w-full h-full object-contain p-1">
+            </div>
+            <h3 class="text-xs md:text-sm font-semibold text-slate-200 relative z-10">Wireshark</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section with Carousel -->
+  <section id="projects" class="py-20 bg-slate-800/50 backdrop-blur-sm relative overflow-hidden">
+    <!-- Animated Gradient Background -->
+    <div class="animated-gradient-bg"></div>
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4 text-slate-200 font-space-grotesk" data-aos="fade-down"
+          data-aos-duration="800" data-aos-delay="100">
+          <span class="bg-linear-to-r from-teal-400 to-cyan-400 bg-clip-text text-transparent">My Projects</span>
+        </h2>
+        <div class="w-24 h-1 bg-teal-500 mx-auto rounded-full mb-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="150" data-aos-easing="ease-out-cubic"></div>
+        <p class="text-lg text-slate-400 max-w-2xl mx-auto font-inter" data-aos="fade-up" data-aos-duration="600"
+          data-aos-delay="200">
+          Here are some projects I've worked on recently and some that are coming soon.
+        </p>
+      </div>
+
+      <!-- Carousel Container -->
+      <div class="relative max-w-6xl mx-auto">
+        <!-- Carousel Wrapper -->
+        <div id="projectCarousel" class="relative overflow-hidden rounded-2xl" data-aos="zoom-in-up"
+          data-aos-duration="800" data-aos-delay="200">
+          <div id="carouselContainer" class="flex transition-transform duration-500 ease-in-out">
+            <!-- Project Card 1 -->
+            <div class="min-w-full px-4 py-2">
+              <div
+                class="bg-slate-900/80 backdrop-blur-sm rounded-2xl overflow-hidden border border-slate-700/50 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="flex flex-col md:flex-row">
+                  <div class="md:w-2/5 p-6 flex items-center justify-center">
+                    <img src="./assets/project1.png" alt="Snake Game" class="w-full h-64 object-cover rounded-xl">
+                  </div>
+                  <div class="md:w-3/5 p-8">
+                    <h3 class="text-2xl font-bold text-teal-400 mb-3 font-space-grotesk" data-aos="fade-up"
+                      data-aos-duration="600" data-aos-delay="300">Snake Game</h3>
+                    <p class="text-slate-300 mb-4 font-inter" data-aos="fade-up" data-aos-duration="600"
+                      data-aos-delay="400">
+                      Classic Snake game implemented in Python using tkinter library. Features include score tracking,
+                      collision detection, When the snake eats food, it grows longer.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6" data-aos="fade-up" data-aos-duration="600"
+                      data-aos-delay="500">
+                      <span
+                        class="bg-slate-800 text-teal-400 text-xs font-semibold px-3 py-1 rounded-full">Python</span>
+                      <span
+                        class="bg-slate-800 text-teal-400 text-xs font-semibold px-3 py-1 rounded-full">Pygame</span>
+                      <span class="bg-slate-800 text-teal-400 text-xs font-semibold px-3 py-1 rounded-full">Game
+                        Dev</span>
+                      <span class="bg-slate-800 text-teal-400 text-xs font-semibold px-3 py-1 rounded-full">OOP</span>
+                    </div>
+                    <div class="flex gap-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="600">
+                      <a href="https://github.com/Dimm377/Ular-Nokia"
+                        class="text-sm font-semibold font-space-grotesk bg-teal-500 py-2 px-5 rounded-full text-slate-900 shadow-lg hover:shadow-teal-500/30 transition-all duration-300 ease-in-out hover:-translate-y-0.5 transform inline-flex items-center">
+                        <i class="fab fa-github mr-2"></i> GitHub
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="min-w-full px-4 py-2">
+              <div
+                class="bg-slate-900/80 backdrop-blur-sm rounded-2xl overflow-hidden border border-slate-700/50 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="flex flex-col md:flex-row">
+                  <div class="md:w-2/5 p-6 flex items-center justify-center">
+                    <img src="./assets/project2.png" alt="Password Generator"
+                      class="w-full h-64 object-cover rounded-xl">
+                  </div>
+                  <div class="md:w-3/5 p-8">
+                    <h3 class="text-2xl font-bold text-teal-400 mb-3 font-space-grotesk" data-aos="fade-up"
+                      data-aos-duration="600" data-aos-delay="300">Password Generator</h3>
+                    <p class="text-slate-300 mb-4 font-inter" data-aos="fade-up" data-aos-duration="600"
+                      data-aos-delay="400">
+                      A secure password generator tool that creates random passwords based on keyboard symbols.
+                      Features include customizable length, character sets, and secure randomization algorithm. but the
+                      UI is still ugly
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6" data-aos="fade-up" data-aos-duration="600"
+                      data-aos-delay="500">
+                      <span
+                        class="bg-slate-800 text-teal-400 text-xs font-semibold px-3 py-1 rounded-full">JavaScript</span>
+                      <span class="bg-slate-800 text-teal-400 text-xs font-semibold px-3 py-1 rounded-full">HTML</span>
+                      <span class="bg-slate-800 text-teal-400 text-xs font-semibold px-3 py-1 rounded-full">CSS</span>
+                      <span
+                        class="bg-slate-800 text-teal-400 text-xs font-semibold px-3 py-1 rounded-full">Security</span>
+                    </div>
+                    <div class="flex gap-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="600">
+                      <a href="https://github.com/Dimm377/Password-generator"
+                        class="text-sm font-semibold font-space-grotesk bg-teal-500 py-2 px-5 rounded-full text-slate-900 shadow-lg hover:shadow-teal-500/30 transition-all duration-300 ease-in-out hover:-translate-y-0.5 transform inline-flex items-center">
+                        <i class="fab fa-github mr-2"></i> GitHub
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="min-w-full px-4 py-2">
+              <div
+                class="bg-slate-900/80 backdrop-blur-sm rounded-2xl overflow-hidden border border-slate-700/50 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="flex flex-col md:flex-row">
+                  <div class="md:w-2/5 p-6 flex items-center justify-center">
+                    <img src="./assets/soc-dashboard.gif" alt="AI-Powered SOC Dashboard"
+                      class="w-full h-64 object-contain rounded-xl">
+                  </div>
+                  <div class="md:w-3/5 p-8">
+                    <h3 class="text-2xl font-bold text-teal-400 mb-3 font-space-grotesk" data-aos="fade-up"
+                      data-aos-duration="600" data-aos-delay="300">AI-Powered SOC Dashboard</h3>
+                    <p class="text-slate-300 mb-4 font-inter" data-aos="fade-up" data-aos-duration="600"
+                      data-aos-delay="400">
+                      Advanced Security Operations Center dashboard integrating AI for intelligent threat detection.
+                      Features include Intrusion Detection Systems (IDS), Threat Intelligence feeds, Honeypot
+                      integration,
+                      SIEM correlation, and SOAR automation for comprehensive cybersecurity monitoring and response.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6" data-aos="fade-up" data-aos-duration="600"
+                      data-aos-delay="500">
+                      <span class="bg-slate-800 text-teal-400 text-xs font-semibold px-3 py-1 rounded-full">AI/ML</span>
+                      <span
+                        class="bg-slate-800 text-teal-400 text-xs font-semibold px-3 py-1 rounded-full">CyberSec</span>
+                      <span class="bg-slate-800 text-teal-400 text-xs font-semibold px-3 py-1 rounded-full">SIEM</span>
+                      <span class="bg-slate-800 text-teal-400 text-xs font-semibold px-3 py-1 rounded-full">Threat
+                        Intel</span>
+                    </div>
+                    <div class="flex gap-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="600">
+                      <div
+                        class="text-sm font-semibold font-space-grotesk bg-slate-700 py-2 px-5 rounded-full text-slate-200 shadow-lg inline-flex items-center opacity-50 cursor-not-allowed">
+                        <i class="fas fa-clock mr-2"></i> Coming Soon
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Card 4 -->
+            <div class="min-w-full px-4 py-2">
+              <div
+                class="bg-slate-900/80 backdrop-blur-sm rounded-2xl overflow-hidden border border-slate-700/50 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="flex flex-col md:flex-row">
+                  <div class="md:w-2/5 p-6 flex items-center justify-center">
+                    <img src="./assets/tux-linux-penguin.gif" alt="E-Commerce Web Scraper Bot"
+                      class="w-full h-64 object-contain rounded-xl">
+                  </div>
+                  <div class="md:w-3/5 p-8">
+                    <h3 class="text-2xl font-bold text-teal-400 mb-3 font-space-grotesk" data-aos="fade-up"
+                      data-aos-duration="600" data-aos-delay="300">E-Commerce Web Scraper Bot</h3>
+                    <p class="text-slate-300 mb-4 font-inter" data-aos="fade-up" data-aos-duration="600"
+                      data-aos-delay="400">
+                      Automated bot for scraping e-commerce websites to collect product data, prices, and inventory
+                      information.
+                      Features include data extraction, storage in PostgreSQL database, and scheduled scraping
+                      intervals.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6" data-aos="fade-up" data-aos-duration="600"
+                      data-aos-delay="500">
+                      <span
+                        class="bg-slate-800 text-teal-400 text-xs font-semibold px-3 py-1 rounded-full">Python</span>
+                      <span class="bg-slate-800 text-teal-400 text-xs font-semibold px-3 py-1 rounded-full">Web
+                        Scraping</span>
+                      <span
+                        class="bg-slate-800 text-teal-400 text-xs font-semibold px-3 py-1 rounded-full">PostgreSQL</span>
+                      <span
+                        class="bg-slate-800 text-teal-400 text-xs font-semibold px-3 py-1 rounded-full">Automation</span>
+                    </div>
+                    <div class="flex gap-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="600">
+                      <div
+                        class="text-sm font-semibold font-space-grotesk bg-slate-700 py-2 px-5 rounded-full text-slate-200 shadow-lg inline-flex items-center opacity-50 cursor-not-allowed">
+                        <i class="fas fa-clock mr-2"></i> Coming Soon
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Card 5 -->
+            <div class="min-w-full px-4 py-2">
+              <div
+                class="bg-slate-900/80 backdrop-blur-sm rounded-2xl overflow-hidden border border-slate-700/50 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="flex flex-col md:flex-row">
+                  <div class="md:w-2/5 p-6 flex items-center justify-center">
+                    <img src="./assets/tired-dead.gif" alt="InvoiceFlow" class="w-full h-64 object-contain rounded-xl">
+                  </div>
+                  <div class="md:w-3/5 p-8">
+                    <h3 class="text-2xl font-bold text-teal-400 mb-3 font-space-grotesk" data-aos="fade-up"
+                      data-aos-duration="600" data-aos-delay="300">SaaS InvoiceFlow Project</h3>
+                    <p class="text-slate-300 mb-4 font-inter" data-aos="fade-up" data-aos-duration="600"
+                      data-aos-delay="400">
+                      Smart invoice and payment tracking system with automated reminders,
+                      multi-currency support, and comprehensive financial reporting.
+                      Features include invoice generation, payment tracking, and client management.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6" data-aos="fade-up" data-aos-duration="600"
+                      data-aos-delay="500">
+                      <span
+                        class="bg-slate-800 text-teal-400 text-xs font-semibold px-3 py-1 rounded-full">FinTech</span>
+                      <span
+                        class="bg-slate-800 text-teal-400 text-xs font-semibold px-3 py-1 rounded-full">Automation</span>
+                      <span
+                        class="bg-slate-800 text-teal-400 text-xs font-semibold px-3 py-1 rounded-full">Payment</span>
+                      <span class="bg-slate-800 text-teal-400 text-xs font-semibold px-3 py-1 rounded-full">Coming
+                        Soon</span>
+                    </div>
+                    <div class="flex gap-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="600">
+                      <div
+                        class="text-sm font-semibold font-space-grotesk bg-slate-700 py-2 px-5 rounded-full text-slate-200 shadow-lg inline-flex items-center opacity-50 cursor-not-allowed">
+                        <i class="fas fa-clock mr-2"></i> Coming Soon
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel Navigation -->
+        <button id="prevProject"
+          class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-slate-800/80 hover:bg-slate-700 text-slate-200 p-3 rounded-full shadow-lg z-10 transition-all duration-300">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button id="nextProject"
+          class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-slate-800/80 hover:bg-slate-700 text-slate-200 p-3 rounded-full shadow-lg z-10 transition-all duration-300">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+
+        <!-- Carousel Indicators -->
+        <div class="flex justify-center mt-8 space-x-2">
+          <button class="indicator-btn w-3 h-3 bg-slate-700 rounded-full transition-all duration-300 active-dot"
+            data-index="0"></button>
+          <button class="indicator-btn w-3 h-3 bg-slate-700 rounded-full transition-all duration-300"
+            data-index="1"></button>
+          <button class="indicator-btn w-3 h-3 bg-slate-700 rounded-full transition-all duration-300"
+            data-index="2"></button>
+          <button class="indicator-btn w-3 h-3 bg-slate-700 rounded-full transition-all duration-300"
+            data-index="3"></button>
+          <button class="indicator-btn w-3 h-3 bg-slate-700 rounded-full transition-all duration-300"
+            data-index="4"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-slate-900/50 backdrop-blur-sm">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4 text-slate-200 font-space-grotesk" data-aos="fade-down"
+          data-aos-duration="800" data-aos-delay="100">
+          <span class="bg-linear-to-r from-teal-400 to-cyan-400 bg-clip-text text-transparent">Get in touch</span>
+        </h2>
+        <div class="w-24 h-1 bg-teal-500 mx-auto rounded-full mb-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="150" data-aos-easing="ease-out-cubic"></div>
+        <p class="text-lg text-slate-400 max-w-2xl mx-auto font-inter mb-8" data-aos="fade-up" data-aos-duration="600"
+          data-aos-delay="200">
+          Let's build some cool stuff together !
+        </p>
+      </div>
+
+      <div class="max-w-4xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <!-- Contact Info -->
+          <div class="space-y-6" data-aos="fade-right" data-aos-duration="700" data-aos-delay="200">
+            <div class="bg-slate-800/60 backdrop-blur-sm rounded-xl p-5 border border-slate-700/50 shadow-lg">
+              <h3 class="text-xl font-bold text-teal-400 mb-3 font-space-grotesk flex items-center">
+                <i class="fas fa-envelope mr-3"></i> Email
+              </h3>
+              <a href="dimaswijay2345@gmail.com"
+                class="text-slate-200 hover:text-teal-400 transition-colors duration-300 font-medium block">
+                dimaswijay2345@gmail.com
+              </a>
+            </div>
+
+            <div class="bg-slate-800/60 backdrop-blur-sm rounded-xl p-5 border border-slate-700/50 shadow-lg">
+              <h3 class="text-xl font-bold text-teal-400 mb-3 font-space-grotesk flex items-center">
+                <i class="fas fa-map-marker-alt mr-3"></i> Location
+              </h3>
+              <p class="text-slate-300">Semarang, Indonesia</p>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="bg-slate-800/60 backdrop-blur-sm rounded-xl p-5 md:p-6 border border-slate-700/50 shadow-lg"
+            data-aos="fade-left" data-aos-duration="700" data-aos-delay="300">
+            <h3 class="text-xl font-bold text-slate-200 mb-5 font-space-grotesk">Send me a message</h3>
+            <form class="space-y-4">
+              <div>
+                <label for="name" class="block text-sm font-medium text-slate-300 mb-1">Your Name</label>
+                <input type="text" id="name" name="name"
+                  class="w-full px-3 py-2 bg-slate-900/70 border border-slate-700/50 rounded-lg text-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all duration-300 text-sm"
+                  placeholder="Enter your name" required>
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-medium text-slate-300 mb-1">Your Email</label>
+                <input type="email" id="email" name="email"
+                  class="w-full px-3 py-2 bg-slate-900/70 border border-slate-700/50 rounded-lg text-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all duration-300 text-sm"
+                  placeholder="Enter your email" required>
+              </div>
+              <div>
+                <label for="subject" class="block text-sm font-medium text-slate-300 mb-1">Subject</label>
+                <input type="text" id="subject" name="subject"
+                  class="w-full px-3 py-2 bg-slate-900/70 border border-slate-700/50 rounded-lg text-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all duration-300 text-sm"
+                  placeholder="What's in your mind?" required>
+              </div>
+              <div>
+                <label for="message" class="block text-sm font-medium text-slate-300 mb-1">Message</label>
+                <textarea id="message" name="message" rows="4"
+                  class="w-full px-3 py-2 bg-slate-900/70 border border-slate-700/50 rounded-lg text-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all duration-300 resize-none text-sm"
+                  placeholder="Write your message here" required></textarea>
+              </div>
+              <div class="pt-2">
+                <button type="submit"
+                  class="w-full github-button text-base font-semibold font-space-grotesk bg-teal-500 py-2.5 px-4 rounded-lg text-slate-900 shadow-lg hover:shadow-teal-500/30 transition-all duration-300 ease-in-out hover:-translate-y-0.5 transform">
+                  <i class="fas fa-paper-plane mr-2"></i> Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./src/js/interactiveParticles.js"></script>
+  <script src="./src/js/hamburgerMenu.js"></script>
+  <script src="./src/js/navbarEffects.js"></script>
+  <script src="./src/js/tiltEffect.js"></script>
+  <script src="./src/js/scrollAnimations.js"></script>
+  <!-- Script untuk Aos -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      AOS.init({
+        duration: 600,
+        easing: 'ease-out-cubic',
+        once: false,
+        mirror: false,
+        anchorPlacement: 'top-bottom',
+        delay: 0,
+        offset: 100,
+        disable: function () {
+          return false;
+        },
+        throttleDelay: 99,
+        startEvent: 'DOMContentLoaded',
+        initClassName: 'aos-init',
+        animatedClassName: 'aos-animate'
+      });
+
+      window.addEventListener('load', function () {
+        AOS.refresh();
+      });
+
+      let resizeTimeout;
+      window.addEventListener('resize', function () {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(function () {
+          AOS.refresh();
+        }, 250);
+      });
+
+      const links = document.querySelectorAll('a[href^="#"]');
+      for (const link of links) {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href');
+          const targetSection = document.querySelector(targetId);
+
+          if (targetSection) {
+            const offsetTop = targetSection.offsetTop - 80;
+            window.scrollTo({
+              top: offsetTop,
+              behavior: 'smooth'
+            });
+          }
+        });
+      }
+    });
+
+    // Project Carousel Functionality
+    document.addEventListener('DOMContentLoaded', function () {
+      const carouselContainer = document.getElementById('carouselContainer');
+      const prevBtn = document.getElementById('prevProject');
+      const nextBtn = document.getElementById('nextProject');
+      const indicators = document.querySelectorAll('.indicator-btn');
+      const projects = document.querySelectorAll('#projectCarousel .min-w-full');
+
+      let currentIndex = 0;
+      const totalProjects = projects.length;
+
+      // Function to update carousel position
+      function goToSlide(index) {
+        if (index < 0) {
+          currentIndex = totalProjects - 1;
+        } else if (index >= totalProjects) {
+          currentIndex = 0;
+        } else {
+          currentIndex = index;
+        }
+
+        carouselContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+        // Update active indicator - improved for better visibility
+        indicators.forEach((indicator, i) => {
+          if (i === currentIndex) {
+            indicator.classList.add('active-dot', 'bg-teal-500');
+            indicator.classList.remove('bg-slate-700');
+          } else {
+            indicator.classList.remove('active-dot', 'bg-teal-500');
+            indicator.classList.add('bg-slate-700');
+          }
+        });
+      }
+
+      // Next button click event
+      nextBtn.addEventListener('click', function () {
+        goToSlide(currentIndex + 1);
+      });
+
+      // Previous button click event
+      prevBtn.addEventListener('click', function () {
+        goToSlide(currentIndex - 1);
+      });
+
+      // Indicator click events
+      indicators.forEach((indicator, index) => {
+        indicator.addEventListener('click', function () {
+          goToSlide(index);
+        });
+      });
+
+      // Auto slide every 5 seconds
+      let slideInterval = setInterval(() => {
+        goToSlide(currentIndex + 1);
+      }, 5000);
+
+      // Pause auto slide when user interacts with carousel
+      const carousel = document.getElementById('projectCarousel');
+      carousel.addEventListener('mouseenter', () => {
+        clearInterval(slideInterval);
+      });
+
+      carousel.addEventListener('mouseleave', () => {
+        slideInterval = setInterval(() => {
+          goToSlide(currentIndex + 1);
+        }, 5000);
+      });
+    });
+
+    // Simple form submission
+    document.addEventListener('DOMContentLoaded', function() {
+      const contactForm = document.querySelector('#contact form');
+      
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          alert('Terima Kasih sudah mengirim pesan ! ');
+          contactForm.reset();
+        });
+      }
+    });
+  </script>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="footer-text">
+        - I love <span class="linux-heart">❤️</span> Linux -
+      </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

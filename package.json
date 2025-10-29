@@ -1,0 +1,24 @@
+{
+  "name": "profile-web",
+  "version": "1.0.0",
+  "description": "Personal profile website built with Tailwind CSS and JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "web": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/style.css --watch",
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dimas Putra Wijaya",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.15",
+    "tailwindcss": "^4.1.15"
+  },
+  "keywords": [
+    "profile"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dimm377/profile-web.git"
+  }
+}
