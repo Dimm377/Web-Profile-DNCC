@@ -1,65 +1,39 @@
-Web Profile - Dimas Putra Wijaya
+# Web Profile - Dimas Putra Wijaya
 
-  Personal profile website built with Tailwind CSS and JavaScript.
+Personal profile website built with Tailwind CSS and JavaScript.
 
-  Features
+## ✨ Features
 
-   - Responsive design with mobile menu
-   - Interactive animations using AOS
-   - 3D tilt effect on profile image
-   - Interactive particle background
-   - Project carousel
-   - Responsive layout for all screen sizes
+* Responsive design with mobile menu
+* Interactive animations using AOS (Animate On Scroll)
+* 3D tilt effect on profile image (using `vanilla-tilt.js` or similar)
+* Interactive particle background (using `particles.js` or `tsParticles`)
+* Project carousel/slider
+* Responsive layout for all screen sizes
 
-  Setup Instructions
+## 🚀 Setup Instructions
 
-   1. Clone the repository:
+1.  Clone the repository:
+    ```bash
+    git clone [https://github.com/Dimm377/profile-web.git](https://github.com/Dimm377/profile-web.git)
+    cd profile-web
+    ```
 
-   1    git clone https://github.com/Dimm377/profile-web.git
-   2    cd profile-web
+2.  Install dependencies:
+    ```bash
+    npm install
+    ```
 
-   2. Install dependencies:
+3.  Build the project:
+    ```bash
+    npm run build
+    ```
 
-   1    npm install
+4.  Open the `dist/index.html` file in your browser or serve it using a local server.
 
-   3. Build the project:
+## 🛠️ Development
 
-   1    npm run build
+To watch for changes and automatically rebuild during development:
 
-   4. Open the dist/index.html file in your browser or serve it using a local server
-
-  Development
-
-  To watch for changes during development:
-
-   1 npm run web
-
-  Build Process
-
-  The project uses:
-   - Tailwind CSS for styling
-   - Custom JavaScript for interactions
-   - AOS library for scroll animations
-
-  To rebuild CSS when making changes:
-
-   1 npm run build
-
-  File Structure
-
-   - src/ - Source files (HTML/CSS/JS)
-   - dist/ - Production build files
-   - assets/ - All image assets
-
-  Technologies Used
-
-   - HTML5
-   - Tailwind CSS
-   - JavaScript
-   - AOS (Animate On Scroll)
-   - Font Awesome
-
-  Browser Support
-
-   - Modern browsers (Chrome, Firefox, Safari, Edge)
-   - Mobile and desktop responsive
+```bash
+npm run web
