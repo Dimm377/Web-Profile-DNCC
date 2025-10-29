@@ -15,7 +15,7 @@ Personal profile website built with Tailwind CSS and JavaScript.
 
 1.  Clone the repository:
     ```bash
-    git clone [https://github.com/Dimm377/profile-web.git](https://github.com/Dimm377/profile-web.git)
+    git clone https://github.com/Dimm377/Web-Profile-DNCC.git
     cd profile-web
     ```
 
