@@ -6,8 +6,8 @@ Personal profile website built with Tailwind CSS and JavaScript.
 
 * Responsive design with mobile menu
 * Interactive animations using AOS (Animate On Scroll)
-* 3D tilt effect on profile image (using `vanilla-tilt.js` or similar)
-* Interactive particle background (using `particles.js` or `tsParticles`)
+* 3D tilt effect on profile image (using `vanilla-tilt.js`)
+* Interactive particle background (using `particles.js`)
 * Project carousel/slider
 * Responsive layout for all screen sizes
 
